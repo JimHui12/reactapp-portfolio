@@ -28671,6 +28671,8 @@ var Jokes = /*#__PURE__*/function (_Component) {
         return _this.setState({
           jokes: json
         });
+      }).catch(function (error) {
+        return alert(error.message);
       });
     });
 
@@ -28688,6 +28690,8 @@ var Jokes = /*#__PURE__*/function (_Component) {
         return _this2.setState({
           joke: json
         });
+      }).catch(function (error) {
+        return alert(error.message);
       });
     }
   }, {
@@ -29006,38 +29010,17 @@ require("../src/index.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom.default.render( /*#__PURE__*/_react.default.createElement(_App.default, null), document.getElementById('root')); // class Animal {
-//     constructor(name, age) {
-//         this.name = name;
-//         this.age = age;
-//     }
-//     speak() {
-//         console.log('I am',  this.name, 
-//         'and I am', this.age, 'years old');
-//     }
-// }
-// const animal = new Animal('Simba', 3);
-// animal.speak();
-// console.log(animal);
-// class Lion extends Animal {
-//     constructor(name, age, furColor, speed) {
-//         super(name, age);
-//         this.furColor = furColor;
-//         this.speed = speed;
-//     }
-//     roar() {
-//         console.log('Roooar! I have',
-//         this.furColor,
-//         'fur, and I can run',
-//         this.speed,
-//         'miles an hour!'
-//         );
-//     }
-// }
-// const lion1 = new Lion('Mufasa', 20, 'golden', 25);
-// lion1.speak();
-// lion1.roar();
-// console.log(lion1);
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement(_App.default, null), document.getElementById('root')); // new Promise((resolve, reject) => {
+//     return reject(new Error('No bears'));
+//     setTimeout(() => {    
+//         resolve('Bears, Beets, Battlestar Galactica');   
+//     }, 2000);    
+// })
+// .then(quote => {
+//     console.log(quote);
+// })
+// .catch(error => console.log('error',  error)
+// );
 },{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/App":"components/App.js","../src/index.scss":"index.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -29066,7 +29049,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63427" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49319" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

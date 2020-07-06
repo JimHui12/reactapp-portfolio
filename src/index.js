@@ -8,41 +8,17 @@ ReactDOM.render(
                 document.getElementById('root')
                 );
 
-// class Animal {
-//     constructor(name, age) {
-//         this.name = name;
-//         this.age = age;
-//     }
+// new Promise((resolve, reject) => {
+//     return reject(new Error('No bears'));
 
-//     speak() {
-//         console.log('I am',  this.name, 
-//         'and I am', this.age, 'years old');
-//     }
-// }
+//     setTimeout(() => {    
+//         resolve('Bears, Beets, Battlestar Galactica');   
+//     }, 2000);    
+// })
+// .then(quote => {
+//     console.log(quote);
+ 
+// })
+// .catch(error => console.log('error',  error)
+// );
 
-// const animal = new Animal('Simba', 3);
-// animal.speak();
-
-// console.log(animal);
-
-// class Lion extends Animal {
-//     constructor(name, age, furColor, speed) {
-//         super(name, age);
-//         this.furColor = furColor;
-//         this.speed = speed;
-//     }
-
-//     roar() {
-//         console.log('Roooar! I have',
-//         this.furColor,
-//         'fur, and I can run',
-//         this.speed,
-//         'miles an hour!'
-//         );
-//     }
-// }
-
-// const lion1 = new Lion('Mufasa', 20, 'golden', 25);
-// lion1.speak();
-// lion1.roar();
-// console.log(lion1);
