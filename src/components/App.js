@@ -2,6 +2,7 @@ import React, { Component} from 'react';
 import Project from './Project';
 import SocialProfile from './SocialProfile';
 import Title from './Title';
+import Header from './Header';
 
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
     render() {
         return (
             <div>
+                <Header />
                 <h1>Hello !</h1>
                 <p> 
                     My name is Jim
