@@ -34158,40 +34158,7 @@ var Title = /*#__PURE__*/function (_Component) {
 
 var _default = Title;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"components/Header.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _reactRouterDom = require("react-router-dom");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Header = function Header() {
-  var style = {
-    display: 'inline-block',
-    margin: 10,
-    marginBottom: 30
-  };
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", {
-    style: style
-  }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: "/"
-  }, "Home")), /*#__PURE__*/_react.default.createElement("h3", {
-    style: style
-  }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: "/jokes"
-  }, "Jokes")));
-};
-
-var _default = Header;
-exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"components/App.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js"}],"components/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34206,8 +34173,6 @@ var _Project = _interopRequireDefault(require("./Project"));
 var _SocialProfile = _interopRequireDefault(require("./SocialProfile"));
 
 var _Title = _interopRequireDefault(require("./Title"));
-
-var _Header = _interopRequireDefault(require("./Header"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -34271,7 +34236,7 @@ var App = /*#__PURE__*/function (_Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement("h1", null, "Hello !"), /*#__PURE__*/_react.default.createElement("p", null, "My name is Jim"), /*#__PURE__*/_react.default.createElement(_Title.default, null), /*#__PURE__*/_react.default.createElement("p", null, "I am always passionate about designing and developing on web projects"), this.state.displayBio ? /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "I live in Brisbane, and code everyday"), /*#__PURE__*/_react.default.createElement("p", null, "My favourite language is Js, and I think React.Js is awesome"), /*#__PURE__*/_react.default.createElement("p", null, "Besides coding, I also love astronomy!"), /*#__PURE__*/_react.default.createElement("button", {
+      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Hello !"), /*#__PURE__*/_react.default.createElement("p", null, "My name is Jim"), /*#__PURE__*/_react.default.createElement(_Title.default, null), /*#__PURE__*/_react.default.createElement("p", null, "I am always passionate about designing and developing on web projects"), this.state.displayBio ? /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "I live in Brisbane, and code everyday"), /*#__PURE__*/_react.default.createElement("p", null, "My favourite language is Js, and I think React.Js is awesome"), /*#__PURE__*/_react.default.createElement("p", null, "Besides coding, I also love astronomy!"), /*#__PURE__*/_react.default.createElement("button", {
         onClick: this.toggleDisplayBio
       }, " Show less")) : /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
         onClick: this.toggleDisplayBio
@@ -34284,7 +34249,7 @@ var App = /*#__PURE__*/function (_Component) {
 
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Project":"components/Project.js","./SocialProfile":"components/SocialProfile.js","./Title":"components/Title.js","./Header":"components/Header.js"}],"components/Jokes.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Project":"components/Project.js","./SocialProfile":"components/SocialProfile.js","./Title":"components/Title.js"}],"components/Jokes.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34293,10 +34258,6 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
-
-var _Header = _interopRequireDefault(require("./Header"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
@@ -34391,7 +34352,7 @@ var Jokes = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement("h2", null, "Highlighted Joke"), /*#__PURE__*/_react.default.createElement(Joke, {
+      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h2", null, "Highlighted Joke"), /*#__PURE__*/_react.default.createElement(Joke, {
         joke: this.state.joke
       }), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("h3", null, "Want ten new jokes?"), /*#__PURE__*/_react.default.createElement("button", {
         onClick: this.fetchJokes
@@ -34409,7 +34370,41 @@ var Jokes = /*#__PURE__*/function (_Component) {
 
 var _default = Jokes;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Header":"components/Header.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js"}],"components/Header.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactRouterDom = require("react-router-dom");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Header = function Header(_ref) {
+  var children = _ref.children;
+  var style = {
+    display: 'inline-block',
+    margin: 10,
+    marginBottom: 30
+  };
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", {
+    style: style
+  }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/"
+  }, "Home")), /*#__PURE__*/_react.default.createElement("h3", {
+    style: style
+  }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/jokes"
+  }, "Jokes"))), children);
+};
+
+var _default = Header;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -34496,6 +34491,8 @@ var _App = _interopRequireDefault(require("./components/App"));
 
 var _Jokes = _interopRequireDefault(require("./components/Jokes"));
 
+var _Header = _interopRequireDefault(require("./components/Header"));
+
 require("../src/index.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -34505,10 +34502,14 @@ _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_reactRouter
 }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
   exact: true,
   path: "/",
-  component: _App.default
+  render: function render() {
+    return /*#__PURE__*/_react.default.createElement(_Header.default, null, " ", /*#__PURE__*/_react.default.createElement(_App.default, null));
+  }
 }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
   path: "/jokes",
-  component: _Jokes.default
+  render: function render() {
+    return /*#__PURE__*/_react.default.createElement(_Header.default, null, " ", /*#__PURE__*/_react.default.createElement(_Jokes.default, null));
+  }
 }))), document.getElementById('root')); // new Promise((resolve, reject) => {
 //     return reject(new Error('No bears'));
 //     setTimeout(() => {    
@@ -34520,7 +34521,7 @@ _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_reactRouter
 // })
 // .catch(error => console.log('error',  error)
 // );
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","history":"../node_modules/history/index.js","./components/App":"components/App.js","./components/Jokes":"components/Jokes.js","../src/index.scss":"index.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","history":"../node_modules/history/index.js","./components/App":"components/App.js","./components/Jokes":"components/Jokes.js","./components/Header":"components/Header.js","../src/index.scss":"index.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -34548,7 +34549,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63985" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57795" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
